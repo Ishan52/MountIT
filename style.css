@@ -226,4 +226,7 @@ li {
   .fa-bars {
     color: blueviolet;
   }
+  .first-content-area h1{
+    font-size:3rem;
+  }
 }
