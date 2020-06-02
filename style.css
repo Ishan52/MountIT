@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* .load {
+  animation: 1s forwards loading;
+}
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+nav {
+  background-color: rgba(0, 0, 0, 0.399);
+  z-index: 100;
+  transition: all 0.3s;
+}
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -100;
+  background-image: url("https://images.unsplash.com/photo-1520513455472-b259f1ec720a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+}
+/* #background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -100;
+} */
+
+a.nav-link {
+  color: white;
+}
+
+a.nav-link:hover {
+  background: #ffffff;
+  color: blueviolet !important ;
+  font-weight: 500;
+}
+.about h2 {
+  font-size: 3em;
+}
+.first-content-area {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 30vh;
+  margin: 35vh auto;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.first-content-area h1 {
+  color: rgb(227, 220, 238);
+  font-weight: bold;
+  font-size: 5rem;
+  text-shadow: 1px 1px 2px blueviolet;
+}
+.btnn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+}
+.btnn:hover {
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+@media all and (max-width: 30em) {
+   .btnn {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+.plan {
+  width: 100%;
+  text-align: center;
+}
+.plan h2 {
+  font-size: 3em;
+}
+.about {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 11vh;
+}
+.about p {
+  margin-top: 20px;
+}
+.second-area {
+  padding-top: 12vh;
+}
+hr {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 250px;
+  border: 0;
+  height: 1px;
+  background-color: black;
+}
+
+.card {
+  z-index: 1;
+  position: relative;
+  margin-top: 30px;
+  box-shadow: 0 0 5px 0;
+  transition: all 0.1s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0;
+  transform: scale(1.07);
+}
+
+.card-img-top {
+  height: 150px;
+}
+
+.card-body {
+  height: 330px;
+}
+.card .btn {
+  position: absolute;
+  bottom: 20px;
+  right: 5%;
+  width: 90%;
+}
+.top {
+  height: 3em;
+  width: 3em;
+  color: rgb(88, 29, 184);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.navbar-toggler-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 10vh;
+  background-color: rgb(15, 13, 17);
+  height: 50vh;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact {
+  flex: 2;
+  display: flex;
+  width: 15%;
+  align-items: center;
+  justify-content: space-between;
+}
+.last div {
+  display: flex;
+}
+
+.last p {
+  flex: 1;
+}
+.navbar-toggler-icon {
+  color: #ffffff;
+}
+
+.color-change {
+  background-color: white;
+}
+li {
+  list-style: none;
+}
+
+.fa-arrow-up {
+  color: rgb(105, 157, 224);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .contact {
+    width: 50% !important;
+  }
+  .card {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .fa-bars {
+    color: blueviolet;
+  }
+}
